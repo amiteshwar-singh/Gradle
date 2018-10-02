@@ -9,6 +9,14 @@ jar {
 	}
 }
 
+repositories {
+	maven { url "https://repo.maven.apache.org/maven2/" }
+}
+
+dependencies {
+	compile group: "commons-lang", name: "commons-lang", version: "2.6"
+}
+
 sourceSets {
 	main {
 		java {
