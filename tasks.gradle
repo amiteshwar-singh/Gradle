@@ -1,0 +1,7 @@
+task task1 {
+	println "Task 1 in tasks.gradle"
+}
+
+task task2 {
+	println "Task 2 in tasks.gradle"
+}
