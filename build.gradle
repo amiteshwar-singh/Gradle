@@ -10,11 +10,15 @@ jar {
 }
 
 repositories {
+	mavenCentral()
 	maven { url "https://repo.maven.apache.org/maven2/" }
 }
 
 dependencies {
 	compile group: "commons-lang", name: "commons-lang", version: "2.6"
+	compile('org.springframework:spring-webmvc:4.2.4.RELEASE') {
+		exclude group: 'commons-logging', module: 'commons-logging'
+	}
 }
 
 sourceSets {
