@@ -13,6 +13,16 @@ hello << { println "Hello extended!!!!" }
 
 greet.dependsOn hello, intro
 
+/*task hello {
+	println "Before DoFirst"
+	doFirst {
+		println "DoFirst"
+	}
+	println "Before DoLast & After DoFirst"
+	doLast { println "DoLast" }
+	println "After DoLast"
+}*/
+
 // gradle tasks	:list all the available tasks
 // gradle intro	:executes intro task
 // gradle -q greet :bare build output
